@@ -6,6 +6,9 @@ A Claude Code mod that keeps your plan usage in a band above the prompt:
 Usage  5h ▰▰▱▱▱│▱▱▱▱ 16% 2h13m · 7d ▰▰▰▰▰│▱▱▱▱ 48% 3d4h · context ▰▰▱▱▱▱▱▱▱▱ 22%
 ```
 
+<img width="640" height="36" alt="image" src="https://github.com/user-attachments/assets/210d3bf7-f1a4-4a78-910a-8c2a4c98fa56" />
+
+
 - **5h / 7d**: how much of the 5-hour and 7-day windows your account has used, then the time
   until each resets.
 - **Bar**: ten cells, one per 10%. Filled cells are green, amber from 70%, red from 90%, in your
