@@ -1,0 +1,12 @@
+{
+  "name": "claude-mods",
+  "owner": { "name": "Wagner Porras" },
+  "description": "Claude Code mods by Wagner Porras, one folder each.",
+  "plugins": [
+    {
+      "name": "usage-band",
+      "source": "./usage-band",
+      "description": "Your Claude plan usage above the prompt: 5-hour and 7-day bars with reset countdowns and a pace marker, plus the context window."
+    }
+  ]
+}

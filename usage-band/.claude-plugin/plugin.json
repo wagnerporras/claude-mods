@@ -1,0 +1,41 @@
+{
+  "name": "usage-band",
+  "version": "0.1.0",
+  "description": "A band above the prompt with your Claude plan usage: 5-hour and 7-day bars with reset countdowns and a pace marker, plus the context window. No network calls, no tokens.",
+  "author": { "name": "Wagner Porras" },
+  "license": "MIT",
+  "repository": "https://github.com/wagnerporras/claude-mods",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "warnAt": {
+      "type": "number",
+      "title": "Amber from (%)",
+      "description": "A bar turns amber at this percentage.",
+      "default": 70
+    },
+    "criticalAt": {
+      "type": "number",
+      "title": "Red from (%)",
+      "description": "A bar turns red at this percentage; the 5h and 7d windows also toast once when they cross it.",
+      "default": 90
+    },
+    "showPace": {
+      "type": "boolean",
+      "title": "Pace marker",
+      "description": "Mark in each 5h/7d bar where usage would be at an even pace through the window.",
+      "default": true
+    },
+    "showContext": {
+      "type": "boolean",
+      "title": "Context bar",
+      "description": "Show how full the context window is.",
+      "default": true
+    },
+    "toast": {
+      "type": "boolean",
+      "title": "Toast near the limit",
+      "description": "Toast once per window when 5h or 7d usage crosses the red threshold.",
+      "default": true
+    }
+  }
+}
